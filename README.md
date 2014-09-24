@@ -36,7 +36,7 @@ Parameters:
  - **eventName** {string}
  - **handler** {function}
 
-Attaches a handler a given event. When the event is fired, (surprise suprise) the handler will be called.
+Attaches a handler to a given event. When the event is fired, (surprise suprise) the handler will be called.
 
 ```js
 events.on( 'cookie', function ( cookie ) {
@@ -55,7 +55,7 @@ Parameters:
  - **eventName** {string}
  - **handler** {function}
 
-Like `.on()`, but with a twist &ndash; the handler is only called once. If `eventName` is fired subseqent times, the handler won't be called again.
+Like `.on()`, but with a twist &ndash; no matter how many times `eventName` is fired, the handler is only called the first time.
 
 ```js
 events.one( 'bloated', function () {
